@@ -46,8 +46,7 @@ class NewsActivity : AppCompatActivity(),NewsView {
         binding.swipeRefresher.setOnRefreshListener {
             presenter.loadNews(Constants.API_KEY,currentQuery,searchIn,sortBy)
         }
-
-        presenter.loadSavedNews()
+        
         //presenter.loadNews(Constants.API_KEY,currentQuery,searchIn,sortBy)
     }
 
